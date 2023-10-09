@@ -155,6 +155,68 @@ Zusammenfassend lässt sich sagen, dass Unsupervised Learning eine vielversprech
 
 Ein weiterer wichtiger Aspekt des **Unsupervised Learnings** ist die Qualität der Daten. Die Daten müssen in der Regel bereinigt und vorbereitet werden, bevor sie in das Modell eingespeist werden können. Es ist auch wichtig, genügend Daten zu haben, um ein zuverlässiges Modell zu trainieren. Weitere Informationen dazu findest du in diesem Beitrag.
 
+![ml80_01](pictures/ml80_01.JPG)
+
+![ml80_02](pictures/ml80_02.JPG)
+
+![ml80_03](pictures/ml80_03.JPG)
+
+![ml80_04](pictures/ml80_04.JPG)
+
+![ml80_05](pictures/ml80_05.JPG)
+
+![ml80_06](pictures/ml80_06.JPG)
+
+![ml80_07](pictures/ml80_07.JPG)
+
+![ml80_08](pictures/ml80_08.JPG)
+
+![ml80_09](pictures/ml80_08.JPG)
+
+![ml80_10](pictures/ml80_10.JPG)
+
+![ml80_11](pictures/ml80_11.JPG)
+
+![ml80_12](pictures/ml80_12.JPG)
+
+![ml80_13](pictures/ml80_13.JPG)
+
+![ml80_14](pictures/ml80_14.JPG)
+
+![ml80_15](pictures/ml80_15.JPG)
+
+![ml80_16](pictures/ml80_16.JPG)
+
+![ml80_17](pictures/ml80_17.JPG)
+
+![ml80_18](pictures/ml80_18.JPG)
+
+![ml80_19](pictures/ml80_19.JPG)
+
+![ml80_20](pictures/ml80_20.JPG)
+
+![ml80_21](pictures/ml80_21.JPG)
+
+![ml80_22](pictures/ml80_22.JPG)
+
+![ml80_23](pictures/ml80_23.JPG)
+
+![ml80_24](pictures/ml80_24.JPG)
+
+![ml80_25](pictures/ml80_25.JPG)
+
+![ml80_26](pictures/ml80_26.JPG)
+
+![ml80_27](pictures/ml80_27.JPG)
+
+![ml80_28](pictures/ml80_28.JPG)
+
+![ml80_29](pictures/ml80_29.JPG)
+
+![ml80_30](pictures/ml80_30.JPG)
+
+![ml80_31](pictures/ml80_31.JPG)
+
 ## Quellen
 
 - **k-Means**: [K-Means-Algorithmus](https://de.wikipedia.org/wiki/K-Means-Algorithmus). Das Buch Data Driven Science & Engineering.
