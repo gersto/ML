@@ -155,6 +155,48 @@ Auch für die Klassifikation gibt es noch viele weitere und noch einige Variante
 
 Ein weiterer wichtiger Aspekt des **Supervised Learnings** ist die Qualität der Daten. Die Daten müssen in der Regel bereinigt und vorbereitet werden, bevor sie in das Modell eingespeist werden können. Es ist auch wichtig, genügend Daten zu haben, um ein zuverlässiges Modell zu trainieren. Weitere Informationen dazu findest du in diesem Beitrag. Insgesamt ist **Supervised Learning** ein wichtiger Ansatz des maschinellen Lernens, der in vielen Anwendungen eingesetzt wird. Es ermöglicht es, Vorhersagen auf der Grundlage von Daten zu treffen und kann dazu beitragen, Prozesse zu automatisieren und zu optimieren.
 
+![ml50_01](pictures/ml50_01.JPG)
+
+![ml50_02](pictures/ml50_02.JPG)
+
+![ml50_03](pictures/ml50_03.JPG)
+
+![ml50_04](pictures/ml50_04.JPG)
+
+![ml50_05](pictures/ml50_05.JPG)
+
+![ml50_06](pictures/ml50_06.JPG)
+
+![ml50_07](pictures/ml50_07.JPG)
+
+![ml50_08](pictures/ml50_08.JPG)
+
+![ml50_09](pictures/ml50_09.JPG)
+
+![ml50_10](pictures/ml50_10.JPG)
+
+![ml50_11](pictures/ml50_11.JPG)
+
+![ml50_12](pictures/ml50_12.JPG)
+
+![ml50_13](pictures/ml50_13.JPG)
+
+![ml50_14](pictures/ml50_14.JPG)
+
+![ml50_15](pictures/ml50_15.JPG)
+
+![ml50_16](pictures/ml50_16.JPG)
+
+![ml50_17](pictures/ml50_17.JPG)
+
+![ml50_18](pictures/ml50_18.JPG)
+
+![ml50_19](pictures/ml50_19.JPG)
+
+![ml50_20](pictures/ml50_20.JPG)
+
+![ml50_21](pictures/ml50_21.JPG)
+
 ## Quellen
 
 [https://medium.com/ml-research-lab/machine-learning-algorithm-overview-5816a2e6303](https://medium.com/ml-research-lab/machine-learning-algorithm-overview-5816a2e6303)
@@ -162,3 +204,4 @@ Ein weiterer wichtiger Aspekt des **Supervised Learnings** ist die Qualität der
 [https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
 
 [https://machinelearningmastery.com/master-machine-learning-algorithms/](https://machinelearningmastery.com/master-machine-learning-algorithms/)
+
