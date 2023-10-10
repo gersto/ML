@@ -51,3 +51,4 @@ Betrachten wir dazu einmal ein Koordinatensystem wie in der unteren Abbildung li
 
 - [https://towardsdatascience.com/ordinary-least-squares-ols-deriving-the-normal-equation-8da168d740c](https://towardsdatascience.com/ordinary-least-squares-ols-deriving-the-normal-equation-8da168d740c)
 - [https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression/](https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression/)
+- [https://github.com/codingwithmagga/machine_learning_tutorial_code/tree/main/Tutorial_08_Implementation_LR_GD](https://github.com/codingwithmagga/machine_learning_tutorial_code/tree/main/Tutorial_08_Implementation_LR_GD)
