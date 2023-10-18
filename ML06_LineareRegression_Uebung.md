@@ -1,6 +1,6 @@
 ## Wiederholung Numpy Reshape
 
-[Merkblatt_Lineare_Regression](pdfs/Merkblatt_Lineare_Regression.pdf)
+[Merkblatt_Lineare_Regression](pictures/Merkblatt_Lineare_Regression.pdf)
 
 ```python
 import numpy as np
