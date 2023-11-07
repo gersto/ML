@@ -247,7 +247,7 @@ print(y_pred)
 
 ## Regressionsmodell bewerten / Bestimmtheitsmaß R<sup>2</sup>
 
-[Merkblatt_Bestimmtheitsmaß](pdfs/Merkblatt_Bestimmtheitsmaß.pdf)
+[Merkblatt_Bestimmtheitsmaß](pictures/Merkblatt_Bestimmtheitsmaß.pdf)
 
 Dabei geht es darum wie man die verschiedenen Modelle bewerten kann.
 Im eindimensionalen konnte man das Ergebnis plotten, aber bei mehreren Parametern (Features) braucht man ein eigenes Bewertungsschema (ein mathematisches Maß wie man die Güte oder Qualität bewertet)
