@@ -27,4 +27,17 @@
  
 ## Neural Networks
 
-* 
+* are specific type of machine learning algorithm whose architecture is inspired by the function of the human brain
+* can automatically extract and learn more complex features of raw data
+* components of neural networks
+  * layers (input, hidden, output)
+  * neurons and activation functions
+  * backpropagation (helps the robot learn from its mistakes by fixing them)
+  * gradient descent (guides the robot to the right answer by taking small, careful steps)
+* modules
+  * pytorch (https://pytorch.org/)
+  * tensorflow (https://www.tensorflow.org/)
+  * keras (https://keras.io/)
+* neuroevolution of augmenting topologies (NEAT) - (https://neat-python.readthedocs.io/en/latest/neat_overview.html)
+
+## Computer Vision
