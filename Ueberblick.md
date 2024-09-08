@@ -1,7 +1,5 @@
 # AI
 
-[https://www.youtube.com/watch?v=OHf5bapbrcl](https://www.youtube.com/watch?v=OHf5bapbrcl)
-
 ## Machine Learing Algorithmen
 
 * computional methods that allow computers to leran from and make decisisons or predictions based on the data
@@ -75,3 +73,31 @@
   * huggingface (https://huggingface.co/)
 
 ## RAG (Retrieval augmented generation)
+
+* technique that can be used with LLMs to get better responses and use them for more context-specific application
+* LLMs typically don't have access to real-time information
+* or even if they do, they might not have access to the information that you need them to have
+* RAG involves the LLMs querying a specific type of dataset, grabbing information that's relevant to what it needs to answer, and then giving you a context-specific response
+* taking the data that you want this model to have  access to, storing it in a really fast database to look up stuff from: vector search/store database.
+* the LLM will then use that database by providing some kind of prompt, it will get relevant results back, it will read and understand that and then generate something that's context-specific
+* python products
+  * LangChain (https://www.langchain.com/)
+  * Ollama (https://ollama.com/)
+  * LlamaIndex (https://www.llamaindex.ai/)
+ 
+## AI Agents
+
+* they have the ability to interact with their environment and use various tools that you give them access to
+* could very simple like having the ability to send an email
+* or has access to full suite of different tools
+* you can build a virtual assistent
+* key components
+  * environment interaction
+  * self-determined task execution
+  * data collection
+* python products
+  * LangChain (https://www.langchain.com/)
+  * LlamaIndex (https://www.llamaindex.ai/)
+
+### Link
+[https://www.youtube.com/watch?v=OHf5bapbrcl](https://www.youtube.com/watch?v=OHf5bapbrcl)
