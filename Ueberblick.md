@@ -41,3 +41,37 @@
 * neuroevolution of augmenting topologies (NEAT) - (https://neat-python.readthedocs.io/en/latest/neat_overview.html)
 
 ## Computer Vision
+
+* refers to doing image and video analysis and typically things like object detection and tracking, facial recognition, image segmentation, etc
+* opencv python
+* convolutional neural networks (we take an image an analyse it using machine learning algorithm)
+* modules
+  * opencv (https://opencv.org/)
+  * skikit-image (https://scikit-image.org/)
+  * pillow (https://pillow.readthedocs.io/en/stable/ ; https://python-pillow.org/)
+ 
+## LLMs
+
+* one of the most misunderstood forms of AI in terms of what they actually do and how you can use them
+* are designed to understand and generate human language in a broad sense
+* they are trained on tons of data like
+  * books
+  * movies
+  * articles
+  * internet
+  * ...
+* they can answer questions
+* they can generate essays
+* they can write code
+* fine-tuning is the process of passing specific data related to exactly what you want this llm to do
+  * medical diagnosis
+  * ...
+* key models
+  * GPT (generative pre-trained transformers)
+    * generates text, processes text unidirectionally (left and right) and is great for creating new content
+  * BERT (bidirectional encoder representations from transformers)
+    * understands text, processes text bidirectionally (left to right and right to left), and is great for understanding and interpreting existing content.
+* python modules
+  * huggingface (https://huggingface.co/)
+
+## RAG (Retrieval augmented generation)
