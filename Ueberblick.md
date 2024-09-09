@@ -2,7 +2,7 @@
 
 ## Machine Learing Algorithmen
 
-* computional methods that allow computers to leran from and make decisisons or predictions based on the data
+* computional methods that allow computers to learn from and make decisions or predictions based on the data
 * they do this by identifying patterns and relationships
 * during a process called "training"
 * an algorithm will adjust its parameters in order to minimize errors
