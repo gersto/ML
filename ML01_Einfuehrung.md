@@ -130,6 +130,9 @@ Weitere Anwendungsbereiche für Machine Learning sind zum Beispiel noch die Spra
 
 Machine Learning ist ein Teilbereich der künstlichen Intelligenz, die das Ziel verfolgt, einem Programm auf Basis einer hohen Datenmenge Wissen anzueignen, statt feste Algorithmen vorzugeben. Letztendlich wird in einem Machine Learning Problem versucht eine Funktion zu approximieren, die die Eingangsdaten möglichst gut auf die Ausgangsdaten abbildet. Diese Funktion unterscheidet sich je nach verwendetem Machine Learning Modell und kann Millionen von Parametern enthalten. Häufig kann das Verhalten solch einer Funktion mit dem menschlichen Verstand nicht mehr oder nur mit sehr viel Aufwand nachverfolgt werden. Bereits heute gibt es eine Vielzahl von Anwendungsgebieten für Machine Learning und jeden Tag werden auf diesem Gebiet neue Entdeckungen gemacht und Ideen verwirklicht.
 
+## Links
+[https://www.youtube.com/watch?v=tCApwsdijDk&list=PLNdSza1vBfZYh7gce5lctv1K1Xm3JjF-w](https://www.youtube.com/watch?v=tCApwsdijDk&list=PLNdSza1vBfZYh7gce5lctv1K1Xm3JjF-w)
+
 # Einführung
 
 ![ml20](pictures/ml20.jpg)
