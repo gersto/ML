@@ -127,6 +127,60 @@ Vorteile:
 
 ## Alternative Methoden zum Betrieb von LLMs
 
+### Olama
+
+### Direkt vom Hersteller der OpenSource LLMs
+
+#### Cohere
+direkt über den Link https://cohere.com und dort im Chat direkt ddie Modelle testen
+
+#### Lama über Meta direkt
+
+#### Chatbot Arena (https://lmarena.ai/)
+
+#### HuggingChat (ein Interface für die Nutzung von Open-Source LLMs)
+
+### Prompt Engineering
+
+Testen am Beispiel von HuggingChat (https://huggingface.co/chat/)
+
+z.B. Code a snake game
+
+#### Systemprompt
+
+- z.B. You are a helpful Assistant
+- You are a python-expert --> wenn du python-code schreiben lassen willst
+- du bist ein kreativer Textexperte
+- Du bist ein nützlicher Gehilfe und Experte für Code
+
+- Das Standard-LLM kann normalerweise nur Text erweitern und Text zusammenfassen
+- Falls man mehr will muss man den System-Prompt erweitern
+- funktioniert nach dem Konzept der semantic association
+- es geht darum Kontext zu geben (neuere Modelle - z.B. Copilot - fragen nach einem entsprechendem Kontext,
+  wenn man diesen nicht angibt)
+
+### Function Calling
+- viele Modelle haben zusätzliche Tools integriert, welche Sie bei Bedarf aufrufen
+- z.B Calculator beim Aufruf von mathematischen Aufgaben (z.B. Was ist 88 . 88 / 2)
+- LLMs errechnen nur anhand von Wahrscheinlichkeiten den nächsten Token (Text, Code, ...)
+- manche LLMs können zusätzliche Anfragen an andere Modelle (Fusion-Modelle, Musikerstellung, Internetanfragen, ...)
+
+![grafik](https://github.com/user-attachments/assets/f01ca733-4c4b-4f06-a32d-20b9b79875f1)
+
+- LLMs können als "Betriebssystem" angesehen werden und das "Betriebssystem macht Function-Calls an andere Tools
+- in LM-Studio ist das Function-Calling nicht integriert --> muss selbst eingefügt werden
+- ChatGPT und Hugging-Chat hat dieses Function-Calling schon eingebaut
+
+
+### Vektordatenbanken und Embeddings
+
+
+
+
+### Assistenten
+
+man kann z.B. in Hugging-Chat eigene Assistenten erzeugen (oft nur Standardmodelle mit eingestelltem Systemprompt
+
 ## Links
 
 Das beste Opensource LLM: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
