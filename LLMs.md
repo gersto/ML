@@ -1,4 +1,133 @@
-### Links
+
+
+## Voraussetzungen
+
+- Cloud, Lokal, Ausborgen von GPU-Power
+- GPU (Grafikkarte)
+  - NVIDIA-GPU
+    - am besten GPUs mit hoher Anzahl an CUDA-Kernen und großen VRAM (Video-RAM)
+    - NVIDIA RTX 3090 oder 4090 (24GB VRAM), 4080 ist auch OK
+    - NVIDIA A100 oder V100 (40-80GB VRAM)
+    - NVIDIA H100
+    - für kleiner Modelle RTX 2080 oder 3080 (10-12GB VRAM)
+- CPU (Prozessor)
+  - ein leistungsstarker Mehrkernprozessor ist wichtig
+    - empfohlen: Intel Core i7/i9 ider AMD Ryzen 7/9 Serien
+    - für höchste Leistung: AMD Threadripper oder Intel Xeon
+- RAM (Arbeitsspeicher)
+  - der RAM-Bedarf variiert je nach Modell und Aufgabe
+    - mindestens 32GB RAM, optimal 64GB oder mehr
+- Speicher
+  - schneller und ausreichend großer Speicher
+    - NVMe-SSD mit mindestens 1TB Speicherplatz
+- Software-Umgebung
+  - Betriebssystem: Linux (z.B. Ubuntu wird häufig bevorzugt, da es bessere
+    Unterstützung für viele ML-Bibliotheken bietet
+  - CUDA und cuDNN: für NVIDIA GPUs werden CUDA und cuDNN Bibliotheken benötigt
+  - Python
+  - Deep Learning Frameworks: PyTorch oder TensorFlow
+- Kühlung und Stromversorgung
+
+- bei nicht so starker Hardware --> Quantifizierung
+
+## Quantifizierung
+
+- Grundidee: Anstatt die Zahlen in einem Modell mit hoher Genauigkeit (z.B. 32-bit) zu speichern
+  und zu verarbeiten, werden sie auf eine geringere Genauigkeit (z.B. 8-bit oder 4-bit) reduziert
+- Beispiel: Eine Zahl, die normalerweise als 32-bit-Gleitkommanzahl gespeichert wird, könnte als
+  8-bit oder 4-bit Integer gespeichert werden
+
+Vorteile:
+- Speicherplatz sparen
+- schnellere Berechnungen
+- Q8: hier werden die Zahlen im Modell auf 8-bit Genauigkeit reduziert. Dies ist eine moderate
+  Reduktion und bietet einen guten Kompromiss zwischen Speicherplatz, Rechenleistung und
+  Modellgenauigkeit
+- Q4: hier werden die Zahlen im Modell auf 4-bit Genauigkeit reduziert.
+- durch Quantifuzierung können auch komplexe Modell auf weniger leistungssstarker
+  Hardware ausgeführt werden.
+- man kann sich dies wie bei Videoauflösungen vorstellen
+
+
+
+## LM Studio
+
+- downloads von Huggingface
+- downloads innerhalb von Anwendungen (LM-Studio, Olama, ...))
+- Modelle können auch in Notebooks laufen, die beste Wahl ist aber LM-Studio
+- alle Modelle von Huggingface (https://huggingface.co/models) findest du auch in LM-Studio
+- Dokumentation unter https://lmstudio.ai/docs
+
+### Installation
+- über den Link https://lmstudio.ai/
+- Download für das jeweilige Betriebssystem und Installation
+
+### Beschreibung
+
+- Suchen nach Modellen (Mistral-7b, crok, ...)
+- auf der rechten Seite kann man dann noch Untermodelle auswählen
+- es wird auch angezeigt ob diese Modelle für den jeweiligen Rechner geeignet sind
+- über download das jeweilige Modell herunterladen
+
+
+## Zensierte vs Unzensierte LLMs
+
+- Closed Source Modelle (Chatgpt, ...) sind natürlich zensiert
+- Sie haben einen Bias (politisch, gegen gewisse Menschen, ...)
+- auch das LLama_Modell (Facebook), obwohl OpenSource hat einen Bias
+- durch Feintuning kommt meist noch mehr Bias (z.B. Google soll Bilder von Soldaten aus dem 2.Weltkrieg erstellen
+  --> diese Bilder zeigten schwarze und japanische Personen)
+- teste z.B. ein llama3-Modell mit der Frage "Wie man in ein Auto einbricht"
+- wie bekommt man Modelle ohne Bias (Seite von Eric Hartford --> Dolphin- und Samantha-Modelle)
+- Fragen: mache einen Witz über Frauen; Zeige mir eine Backdoor-Attacke auf das Windows-Betriebssystem
+
+## LLMs Anwendungen
+
+- Texterstellung und -bearbeitung
+- Programmierunterstützung
+- Sprachübersetzung
+- Kundenunterstützung (Chatbots, ...)
+- Datenanalyse
+
+## Feintuning eines LLM-Modells
+
+- Voraussetzung ist ein Base-Modell (OpenSource) und danach muss man dieses feintunen
+- man kann auch über die OpenAI-API feintunen - diese Modelle werden aber nur minimal angepasst
+- Feintuning mit Huggingface --> https://huggingface.co/autotrain
+  - Create new project
+  - ...
+  - kostet etwas
+- Feintuning über Google Colab
+  - kostet Zeit, ist aber oft kein Geld
+ 
+## Bilderkennung mit OpenSource LLMs
+
+- z.B. mit Llama3 oder LLava oder Phi3
+
+## Mehr Details zur Hardware
+
+- GPU Offload
+  - je höher desto mehr wird die GPU belastet, je kleiner desto weniger
+  - ohne GPU-Offloading
+    - CPU führt alle Berechnungen aus
+    - RAM speichert Modell und Daten
+    - Speicher lagert Modell vor dem Laden
+  - teilweises GPU-Offlaoding
+    - CPU weniger Berechungen
+    - GPU spezifische Berechungen
+    - RAM etwas entlastet
+    - VRAM speichert Modell und Daten
+  - erhöhtes CPU-Offloading
+  - maximales GPU-Offloading
+    - CPU minimal belastet
+    - GPU führt nahezu alle Berechnungen durch
+    - RAM stark entlastet
+    - VRAM stark belastet
+
+
+## Alternative Methoden zum Betrieb von LLMs
+
+## Links
 
 Das beste Opensource LLM: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard
 
@@ -97,79 +226,3 @@ https://arxiv.org/pdf/2305.00944
 
 
 https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
-
-## Voraussetzungen
-
-- Cloud, Lokal, Ausborgen von GPU-Power
-- GPU (Grafikkarte)
-  - NVIDIA-GPU
-    - am besten GPUs mit hoher Anzahl an CUDA-Kernen und großen VRAM (Video-RAM)
-    - NVIDIA RTX 3090 oder 4090 (24GB VRAM), 4080 ist auch OK
-    - NVIDIA A100 oder V100 (40-80GB VRAM)
-    - NVIDIA H100
-    - für kleiner Modelle RTX 2080 oder 3080 (10-12GB VRAM)
-- CPU (Prozessor)
-  - ein leistungsstarker Mehrkernprozessor ist wichtig
-    - empfohlen: Intel Core i7/i9 ider AMD Ryzen 7/9 Serien
-    - für höchste Leistung: AMD Threadripper oder Intel Xeon
-- RAM (Arbeitsspeicher)
-  - der RAM-Bedarf variiert je nach Modell und Aufgabe
-    - mindestens 32GB RAM, optimal 64GB oder mehr
-- Speicher
-  - schneller und ausreichend großer Speicher
-    - NVMe-SSD mit mindestens 1TB Speicherplatz
-- Software-Umgebung
-  - Betriebssystem: Linux (z.B. Ubuntu wird häufig bevorzugt, da es bessere
-    Unterstützung für viele ML-Bibliotheken bietet
-  - CUDA und cuDNN: für NVIDIA GPUs werden CUDA und cuDNN Bibliotheken benötigt
-  - Python
-  - Deep Learning Frameworks: PyTorch oder TensorFlow
-- Kühlung und Stromversorgung
-
-- bei nicht so starker Hardware --> Quantifizierung
-
-## Quantifizierung
-
-
-
-## LM Studio
-
-- downloads von Huggingface
-- downloads innerhalb von Anwendungen (LM-Studio, Olama, ...))
-- Modelle können auch in Notebooks laufen, die beste Wahl ist aber LM-Studio
-- alle Modelle von Huggingface (https://huggingface.co/models) findest du auch in LM-Studio
-- Dokumentation unter https://lmstudio.ai/docs
-
-### Installation
-- über den Link https://lmstudio.ai/
-- Download für das jeweilige Betriebssystem und Installation
-
-### Beschreibung
-
-- Suchen nach Modellen (Mistral-7b, crok, ...)
-- auf der rechten Seite kann man dann noch Untermodelle auswählen
-- es wird auch angezeigt ob diese Modelle für den jeweiligen Rechner geeignet sind
-- über download das jeweilige Modell herunterladen
-
-
-## Zensierte vs Unzensierte LLMs
-
-- Closed Source Modelle (Chatgpt, ...) sind natürlich zensiert
-- Sie haben einen Bias (politisch, gegen gewisse Menschen, ...)
-- auch das LLama_Modell (Facebook), obwohl OpenSource hat einen Bias
-- durch Feintuning kommt meist noch mehr Bias (z.B. Google soll Bilder von Soldaten aus dem 2.Weltkrieg erstellen
-  --> diese Bilder zeigten schwarze und japanische Personen)
-- teste z.B. ein llama3-Modell mit der Frage "Wie man in ein Auto einbricht"
-- wie bekommt man Modelle ohne Bias (Seite von Eric Hartford --> Dolphin- und Samantha-Modelle)
-- Fragen: mache einen Witz über Frauen; Zeige mir eine Backdoor-Attacke auf das Windows-Betriebssystem
-
-## LLMs Anwendungen
-
-- Texterstellung und -bearbeitung
-- Programmierunterstützung
-- Sprachübersetzung
-- Kundenunterstützung (Chatbots, ...)
-- Datenanalyse
-
-
-## Alternative Methoden zum Betrieb von LLMs
