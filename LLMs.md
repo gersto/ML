@@ -174,6 +174,19 @@ z.B. Code a snake game
 
 ### Vektordatenbanken und Embeddings
 
+- das Hochladen und speichern von Daten funktioniert durch die sogenannte RAG-Technologie
+- die RAG-Technologie (Retrieval-Augmented Generation) funktioniert dadurch, dass wir unser Wissen in eine sogenannte Vektordatenbank speichern
+- das LLM kann dan diese Vektrodatenbank zusätzlich durchsuchen
+
+![grafik](https://github.com/user-attachments/assets/28dd627e-5a0d-44b8-b1ad-21a9e4ab4e80)
+
+![grafik](https://github.com/user-attachments/assets/33a1c542-33ec-4faa-bc41-e0fab9997a00)
+
+
+- die embedding-Modelle machen aus den hochgeladenen Daten sogeannte Tokens, welche in einer VektorDB gespeichert werden
+- in einer VektorDB werden die Daten in sogenannten Clustern gespeichert
+- RAG-Technologie ist Function-Calling mit Datensuche in einer VektorDB
+
 
 
 
