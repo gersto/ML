@@ -98,6 +98,40 @@ https://arxiv.org/pdf/2305.00944
 
 https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
 
+## Voraussetzungen
+
+- Cloud, Lokal, Ausborgen von GPU-Power
+- GPU (Grafikkarte)
+  - NVIDIA-GPU
+    - am besten GPUs mit hoher Anzahl an CUDA-Kernen und großen VRAM (Video-RAM)
+    - NVIDIA RTX 3090 oder 4090 (24GB VRAM), 4080 ist auch OK
+    - NVIDIA A100 oder V100 (40-80GB VRAM)
+    - NVIDIA H100
+    - für kleiner Modelle RTX 2080 oder 3080 (10-12GB VRAM)
+- CPU (Prozessor)
+  - ein leistungsstarker Mehrkernprozessor ist wichtig
+    - empfohlen: Intel Core i7/i9 ider AMD Ryzen 7/9 Serien
+    - für höchste Leistung: AMD Threadripper oder Intel Xeon
+- RAM (Arbeitsspeicher)
+  - der RAM-Bedarf variiert je nach Modell und Aufgabe
+    - mindestens 32GB RAM, optimal 64GB oder mehr
+- Speicher
+  - schneller und ausreichend großer Speicher
+    - NVMe-SSD mit mindestens 1TB Speicherplatz
+- Software-Umgebung
+  - Betriebssystem: Linux (z.B. Ubuntu wird häufig bevorzugt, da es bessere
+    Unterstützung für viele ML-Bibliotheken bietet
+  - CUDA und cuDNN: für NVIDIA GPUs werden CUDA und cuDNN Bibliotheken benötigt
+  - Python
+  - Deep Learning Frameworks: PyTorch oder TensorFlow
+- Kühlung und Stromversorgung
+
+- bei nicht so starker Hardware --> Quantifizierung
+
+## Quantifizierung
+
+
+
 ## LM Studio
 
 - downloads von Huggingface
@@ -117,6 +151,25 @@ https://embracethered.com/blog/posts/2023/google-bard-data-exfiltration/
 - es wird auch angezeigt ob diese Modelle für den jeweiligen Rechner geeignet sind
 - über download das jeweilige Modell herunterladen
 
+
+## Zensierte vs Unzensierte LLMs
+
+- Closed Source Modelle (Chatgpt, ...) sind natürlich zensiert
+- Sie haben einen Bias (politisch, gegen gewisse Menschen, ...)
+- auch das LLama_Modell (Facebook), obwohl OpenSource hat einen Bias
+- durch Feintuning kommt meist noch mehr Bias (z.B. Google soll Bilder von Soldaten aus dem 2.Weltkrieg erstellen
+  --> diese Bilder zeigten schwarze und japanische Personen)
+- teste z.B. ein llama3-Modell mit der Frage "Wie man in ein Auto einbricht"
+- wie bekommt man Modelle ohne Bias (Seite von Eric Hartford --> Dolphin- und Samantha-Modelle)
+- Fragen: mache einen Witz über Frauen; Zeige mir eine Backdoor-Attacke auf das Windows-Betriebssystem
+
+## LLMs Anwendungen
+
+- Texterstellung und -bearbeitung
+- Programmierunterstützung
+- Sprachübersetzung
+- Kundenunterstützung (Chatbots, ...)
+- Datenanalyse
 
 
 ## Alternative Methoden zum Betrieb von LLMs
