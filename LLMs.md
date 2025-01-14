@@ -1,5 +1,15 @@
 ## Was sind LLMs
 
+Ein Large Language Model (LLM) ist ein Deep-Learning-Algorithmus, der enorm große Datensätze verwendet.
+LLMs werden häufig in Anwendungen im Bereich des Natural Language Processing (NLP) eingesetzt,
+wenn es darum geht, Abfragen in natürlicher Sprache einzugeben, um eine Antwort bzw. ein Ergebnis zu bekommen.
+
+Ein LLM kann neue Inhalte verstehen, zusammenfassen, generieren und vorhersagen. Es verfügt typischerweise
+über Milliarden von Parametern, die Erinnerungen ähneln, die das Modell während des Lernens durch Training
+sammelt. Parameter ist dabei ein Begriff aus dem Bereich Machine Learning (ML). Dabei handelt es sich um
+Variablen in einem Modell, an denen es trainiert wurde und die dazu dienen, neue Inhalte abzuleiten.
+
+
 - besteht meistens aus 2 Files (Paramterfile und Runfile)
 - Runfile aus ungefähr 500 Zeilen Code (meist Python oder C)
 - Parameterfile ist eine Zusammenfassung aus Text
@@ -8,8 +18,30 @@
 - dies funktioniert nur durch den Einsatz von GPU-Power
 - bei einem Open-Source Modell kann man sich dies downloaden und lokal laufen lassen
 - Closed-Source LLMs sind nur in einem Web-Inferface verwendbar
-- 
+- generelles Konzept: Man kann eine Frage stellen und das LLM errechnet aus Wahrscheinlichkeiten eine "sinnvolle" Anwort
+- die Erstellung dieser LLM Files nennt man Pretraining
+- meist kommt danach, dass durch Menschen überwachte Feintuning (Fragen und Antworten werden vorgegeben und in das Modell integriert)
+- danach kommt noch sehr oft das Reinforcement Learning ("Mensch gibt Daumen hoch oder hinunter" und dadurch lernt das Modell - Belohnungen)
+- alle Maschinen arbeiten mit sogenannten Tokens (Zerteilung von Texten in sogenannte Tokens)
+- Tokens:
+  - 1 token ~ 4 chars in Englisch
+  - 1 token ~ 3/4 word
+  - 100 tokens ~ 75 words
+  - 1-2 snetence ~ 30 tokens
+  - 1 paragraph ~ 100 tokens
+  - 1500 words ~ 2048 tokens
+  - ansehen z.B. über einen Tokenizer (z.B. https://platform.openai.com/tokenizer) - über die TokenID sieht man wie diese Tokens wirklich gespeichert werden.
+  - mit diesen Zahlen kann das neuronale Netz im Hintergrubd rechnen
+- Tokenlimit --> alle Modelle haben ein Limit der Anzahl der Token (2000, 120k 1m, ...)
+- jedes Modell kann sich nur eine bestimmte Anzahl von Tokens merken (OpenSource-Modelle oft nur 4000 Tokens)
+- Google Gemini hat z.B. ein Limit von 1m Token
 
+## Welche LLMs gibt es?
+
+- OpenSource LLM
+- ClosedSource LLM
+- Rangliste über Leaderboards (https://lmarena.ai/?leaderboard oder https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)
+- 
 
 
 ## Voraussetzungen
