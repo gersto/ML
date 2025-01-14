@@ -1,3 +1,15 @@
+## Was sind LLMs
+
+- besteht meistens aus 2 Files (Paramterfile und Runfile)
+- Runfile aus ungefähr 500 Zeilen Code (meist Python oder C)
+- Parameterfile ist eine Zusammenfassung aus Text
+- z.B. Llama2 aus ungefähr 10TB Text wird ein 140GB komprimiertes File erzeugt
+- daraus entsteht das Llama2 70B Parameter Modell
+- dies funktioniert nur durch den Einsatz von GPU-Power
+- bei einem Open-Source Modell kann man sich dies downloaden und lokal laufen lassen
+- Closed-Source LLMs sind nur in einem Web-Inferface verwendbar
+- 
+
 
 
 ## Voraussetzungen
@@ -188,7 +200,7 @@ z.B. Code a snake game
 - RAG-Technologie ist Function-Calling mit Datensuche in einer VektorDB
 
 
-
+### Lokaler RAG-Chatbot mit Anything-LLM und LM-Studio
 
 ### Assistenten
 
