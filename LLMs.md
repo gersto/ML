@@ -184,7 +184,7 @@ direkt über den Link https://cohere.com und dort im Chat direkt ddie Modelle te
 
 #### HuggingChat (ein Interface für die Nutzung von Open-Source LLMs)
 
-### Prompt Engineering
+## Prompt Engineering
 
 Testen am Beispiel von HuggingChat (https://huggingface.co/chat/)
 
@@ -203,7 +203,7 @@ z.B. Code a snake game
 - es geht darum Kontext zu geben (neuere Modelle - z.B. Copilot - fragen nach einem entsprechendem Kontext,
   wenn man diesen nicht angibt)
 
-### Function Calling
+## Function Calling
 - viele Modelle haben zusätzliche Tools integriert, welche Sie bei Bedarf aufrufen
 - z.B Calculator beim Aufruf von mathematischen Aufgaben (z.B. Was ist 88 . 88 / 2)
 - LLMs errechnen nur anhand von Wahrscheinlichkeiten den nächsten Token (Text, Code, ...)
@@ -216,7 +216,7 @@ z.B. Code a snake game
 - ChatGPT und Hugging-Chat hat dieses Function-Calling schon eingebaut
 
 
-### Vektordatenbanken und Embeddings
+## Vektordatenbanken und Embeddings
 
 - das Hochladen und speichern von Daten funktioniert durch die sogenannte RAG-Technologie
 - die RAG-Technologie (Retrieval-Augmented Generation) funktioniert dadurch, dass wir unser Wissen in eine sogenannte Vektordatenbank speichern
